@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		CSI starting
+	</title>
+</head>
+<body>
+
+<h1>CSI in templates.</h1>
+
+	{% for cont in content %}
+		<h3>{{ cont.id }}</h3>
+		<h3>{{ cont.name }}</h3>
+		<h3>{{ cont.file }}</h3>
+		<h3>{{ cont.transcript }}</h3>
+	{% endfor %}
+</body>
+</html>
