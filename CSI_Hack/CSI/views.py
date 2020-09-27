@@ -43,4 +43,4 @@ def teacher(request):
 
 def speech_to_text(request):
 	speechToText.delay()
-	return HttpResponse("<h1> Transcripts will be available in a short while </h1>")
+	return render(request,'CSI/response.html')
